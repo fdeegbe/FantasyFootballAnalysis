@@ -48,8 +48,8 @@ better understand how concepts within data science can more accurately model the
 
 We will be using the following datasets
 
-[NFL-Season-DATA](https://github.com/hvpkod/NFL-Data) dataset.
-[Average-Draft-Positions](https://www.fantasypros.com/nfl/adp/ppr-overall.php) dataset.
+* [NFL-Season-DATA](https://github.com/hvpkod/NFL-Data) dataset.
+* [Average-Draft-Positions](https://www.fantasypros.com/nfl/adp/ppr-overall.php) dataset.
 
 Each dataset contains statistics of NFL players dating back to 2015, with the first dataset detailing their
 in season performance and the second dataset containing their average draft positions on various fantasy 
