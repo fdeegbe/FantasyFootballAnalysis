@@ -1,7 +1,6 @@
 # FantasyFootballAnalysis
-We will be using the [NFL-DATA](https://github.com/hvpkod/NFL-Data) dataset.
 
-# Motivation
+## Motivation
 For decades fantasy football has dominated the landscape of sports betting by striking a perfect balance
 between strategy, competition, and luck. It is a online game where participants can create their own football 
 teams by selecting real life NFL players. Each participant, known as a manager, can draft these players from 
@@ -44,3 +43,20 @@ a particular round.
 The objective of this project is to use statistics and data science to answer the questions above. We hope that through this
 tutorial, the reader will gain a better understanding of the various draft strategies used in fantasy football as well as 
 better understand how concepts within data science can more accurately model the performance of NFL players.
+
+## Procedure
+
+We will be using the following datasets
+
+[NFL-Season-DATA](https://github.com/hvpkod/NFL-Data) dataset.
+[Average-Draft-Positions](https://www.fantasypros.com/nfl/adp/ppr-overall.php) dataset.
+
+Each dataset contains statistics of NFL players dating back to 2015, with the first dataset detailing their
+in season performance and the second dataset containing their average draft positions on various fantasy 
+football platforms.
+
+We will track the following seasons: 2020, 2021, 2022, 2023, combining the two datasets together for each season. 
+
+We will then create 4 different data frames represented for each season. If we need to measure a specific player, 
+we will aggregate the 4 different dataframes together, and we would exclude players who have retired within the time
+frame (2020-2023), meaning 1st, 2nd, and 3rd year players would be included.
