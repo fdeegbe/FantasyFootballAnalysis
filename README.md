@@ -60,3 +60,12 @@ We will track the following seasons: 2020, 2021, 2022, 2023, combining the two d
 We will then create 4 different data frames represented for each season. If we need to measure a specific player, 
 we will aggregate the 4 different dataframes together, and we would exclude players who have retired within the time
 frame (2020-2023), meaning 1st, 2nd, and 3rd year players would be included.
+
+
+### Does the Runningback dead zone exist?
+
+The running back dead zone is defined as the space around rounds three to six, where there is a significant drop off in value for the runningbacks available. This is believed to occur because many NFL teams use a running back by committee approach, where 2 or 3 runningbacks will be used in a game. As a result, the points each of them score is expected to be lower. 
+
+Many draft strategies have appeared from this belief, such as zero-RB, where the player does not believe this dead zone exists and only starts to draft RBs after round 4 or 5, and hero-RB, where the player drafts multiple runningbacks within the first 3 rounds.
+
+We aim to test this, with our null hypothesis bring that the running back deadzone does exist and our alternative hypothesis being that the runninback deadzone does exist.
