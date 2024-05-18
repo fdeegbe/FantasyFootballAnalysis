@@ -38,7 +38,7 @@ a particular round.
 * Does the runningback dead zone exist?
 * Is drafting a quarterback or tight end within the first 3 rounds worth the investment?
 * Which position has the most amount of sleepers?
-* How can we predict the number of points that will be scored by a player in a specific round in 2024?
+* Can we predict how well a quarterback will do based on their volume metrics?
 
 The objective of this project is to use statistics and data science to answer the questions above. We hope that through this
 tutorial, the reader will gain a better understanding of the various draft strategies used in fantasy football as well as 
@@ -60,34 +60,3 @@ We will track the following seasons: 2020, 2021, 2022, 2023, combining the two d
 We will then create 4 different data frames represented for each season. If we need to measure a specific player, 
 we will aggregate the 4 different dataframes together, and we would exclude players who have retired within the time
 frame (2020-2023), meaning 1st, 2nd, and 3rd year players would be included.
-
-
-### Does the Runningback dead zone exist?
-
-The running back dead zone is defined as the space around rounds three to six, where there is a significant drop off in value for the runningbacks available. This is believed to occur because many NFL teams use a running back by committee approach, where 2 or 3 runningbacks will be used in a game. As a result, the points each of them score is expected to be lower. 
-
-Many draft strategies have appeared from this belief, such as zero-RB [https://www.fantasylife.com/articles/best-ball/what-is-zero-rb-drafting-tips-from-a-pro] (link), where the player does not believe this dead zone exists and only starts to draft RBs after round 4 or 5, and hero-RB [https://www.espn.com/fantasy/football/story/_/id/38191251/fantasy-football-mock-draft-strategy-hero-rb-anchor-rb](link), where the player drafts multiple runningbacks within the first 3 rounds.
-
-We aim to test this, with our null hypothesis bring that the running back deadzone does exist and our alternative hypothesis being that the runningback deadzone does exist.
-
-To measure if there is a deadzone, we will look at the difference between the average amounts of points a running back scores for each round
-between 2020 and 2023. If the difference is not linear we can conclude that a drop off does exist.
-
-
-### Is drafting a quarterback or tight end within the first 3 rounds worth the investment?
-
-Another pattern many managers employ is holding off on drafting a quarterback in the early rounds, believing that there would 
-be significant amounts of high performing quarterbacks in later rounds [https://campus2canton.com/breaking-down-the-late-round-qb-cff-draft-strategy/](link). On the other hand, managers race to draft a top 3 tight end, believing they have a significant drop off as well [https://www.draftsharks.com/article/fantasy-football-draft-preview-tight-ends](link).
-
-We create two hypothesis tests to answer this question. 
-
-Test 1
-* H<sub>0</sub>: The top 3 quarterbacks drafted do not substantially outproduce quarterbacks drafted outside of the top 3
-* H<sub>1</sub>: The top 3 quarterbacks drafted do substantially outproduce quarterbacks drafted outside of the top 3
-
-Test 2
-* H<sub>0</sub>: The top 3 tight ends drafted do not substantially outproduce tight ends drafted outside of the top 3
-* H<sub>1</sub>: The top 3 tight ends drafted do substantially outproduce tight ends drafted outside of the top 3
-
-
-
